@@ -1,13 +1,13 @@
 import user from '../data/user.json';
 import { Profile } from './profileApp/Profile';
 import data from '../data/data.json';
-import { Statistics } from './statistics/Statistics';
 import friends from '../data/friends.json';
 import { FriendList } from './friendList/FriendList';
 import transactions from '../data/transactions.json';
 import { TransactionHistory } from './transactionHistory/TransactionHistory';
 import { GlobalStyle } from './GlobalStyle';
 import { Layout } from './Layout';
+import { Statistics } from './statistics/Statistics';
 
 export const App = () => {
   return (
@@ -19,7 +19,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="UPLOAD STATS" stats={data} />
+      <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
       <GlobalStyle />
