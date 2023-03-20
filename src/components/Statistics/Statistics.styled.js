@@ -28,11 +28,30 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   display: flex;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 10px;
+`;
+
+const UploadFormat = styled.span`
+  font-weight: 500;
   color: white;
 `;
 
-export { Container, Div, Title, List, ListItem };
+const UploadPercentage = styled.span`
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+`;
+
+export {
+  Container,
+  Div,
+  Title,
+  List,
+  ListItem,
+  UploadFormat,
+  UploadPercentage,
+};

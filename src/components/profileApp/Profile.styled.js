@@ -54,9 +54,19 @@ const List = styled.ul`
 const ListItem = styled.li`
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   padding: 15px;
   background: #d8ede9;
+`;
+
+const SpanPopularity = styled.span`
+  font-weight: 500;
+  color: gray;
+`;
+
+const SpanPopularityQuantity = styled.span`
+  font-weight: 500;
 `;
 
 export {
@@ -69,4 +79,6 @@ export {
   Location,
   List,
   ListItem,
+  SpanPopularity,
+  SpanPopularityQuantity,
 };

@@ -10,6 +10,8 @@ import {
   List,
   ListItem,
   Div,
+  SpanPopularity,
+  SpanPopularityQuantity,
 } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -24,16 +26,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         </Discription>
         <List>
           <ListItem>
-            <span className="label">Followers</span>
-            <span className="quantity">{stats.followers}</span>
+            <SpanPopularity>Followers</SpanPopularity>
+            <SpanPopularityQuantity>{stats.followers}</SpanPopularityQuantity>
           </ListItem>
           <ListItem>
-            <span className="label">Views</span>
-            <span className="quantity">{stats.views}</span>
+            <SpanPopularity>Views</SpanPopularity>
+            <SpanPopularityQuantity>{stats.views}</SpanPopularityQuantity>
           </ListItem>
           <ListItem>
-            <span className="label">Likes</span>
-            <span className="quantity">{stats.likes}</span>
+            <SpanPopularity>Likes</SpanPopularity>
+            <SpanPopularityQuantity>{stats.likes}</SpanPopularityQuantity>
           </ListItem>
         </List>
       </Div>
