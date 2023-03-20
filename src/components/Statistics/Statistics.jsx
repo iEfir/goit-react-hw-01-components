@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   Container,
   Div,
@@ -31,4 +33,15 @@ export const Statistics = ({ title, stats }) => {
       </Div>
     </Container>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
