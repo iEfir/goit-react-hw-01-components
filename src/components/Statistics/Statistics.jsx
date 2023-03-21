@@ -18,7 +18,7 @@ export const Statistics = ({ title, stats }) => {
   return (
     <Container>
       <Div>
-        <Title>{title}</Title>
+        {title.length > 0 && <Title>{title}</Title>}
         <List>
           {stats.map(stat => (
             <ListItem
