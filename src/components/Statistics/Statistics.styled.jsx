@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.section`
-  padding-top: 40px;
-`;
+const Container = styled.section``;
 
 const Div = styled.div`
   width: 400px;
