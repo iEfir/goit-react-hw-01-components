@@ -7,7 +7,7 @@ import transactions from '../data/transactions.json';
 import { TransactionHistory } from './transactionHistory/TransactionHistory';
 import { GlobalStyle } from './GlobalStyle';
 import { Layout } from './Layout';
-import { Statistics } from './statistics/Statistics';
+import { Statistics } from './statisticsApp/Statistics';
 
 export const App = () => {
   return (
