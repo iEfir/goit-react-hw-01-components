@@ -6,9 +6,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 240px;
-`;
-
-const Div = styled.div`
   box-shadow: 3px 4px 21px 0px #000000;
 `;
 
@@ -70,7 +67,6 @@ const SpanPopularityQuantity = styled.span`
 
 export {
   Container,
-  Div,
   Discription,
   Name,
   UserTag,

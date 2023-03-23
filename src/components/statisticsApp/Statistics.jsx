@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 import {
   Container,
-  Div,
   List,
   ListItem,
   Title,
@@ -17,20 +16,18 @@ function getRandomHexColor() {
 export const Statistics = ({ title, stats }) => {
   return (
     <Container>
-      <Div>
-        {title.length > 0 && <Title>{title}</Title>}
-        <List>
-          {stats.map(stat => (
-            <ListItem
-              key={stat.id}
-              style={{ backgroundColor: getRandomHexColor() }}
-            >
-              <UploadFormat>{stat.label}</UploadFormat>
-              <UploadPercentage>{stat.percentage}%</UploadPercentage>
-            </ListItem>
-          ))}
-        </List>
-      </Div>
+      {title && <Title>{title}</Title>}
+      <List>
+        {stats.map(stat => (
+          <ListItem
+            key={stat.id}
+            style={{ backgroundColor: getRandomHexColor() }}
+          >
+            <UploadFormat>{stat.label}</UploadFormat>
+            <UploadPercentage>{stat.percentage}%</UploadPercentage>
+          </ListItem>
+        ))}
+      </List>
     </Container>
   );
 };

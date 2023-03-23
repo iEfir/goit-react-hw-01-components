@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.section``;
-
-const Div = styled.div`
+const Container = styled.section`
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -44,12 +42,4 @@ const UploadPercentage = styled.span`
   color: white;
 `;
 
-export {
-  Container,
-  Div,
-  Title,
-  List,
-  ListItem,
-  UploadFormat,
-  UploadPercentage,
-};
+export { Container, Title, List, ListItem, UploadFormat, UploadPercentage };
